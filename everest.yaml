@@ -1,0 +1,6 @@
+- Name: VanillaEditHelper
+  Version: 1.0.0
+  DLL: bin/VanillaEditHelper.dll
+  Dependencies:
+    - Name: Everest
+      Version: 1.3324.0
