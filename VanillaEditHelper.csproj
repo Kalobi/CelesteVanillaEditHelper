@@ -61,7 +61,7 @@
     </Target>
 
     <PropertyGroup>
-        <PathMap>$(MSBuildProjectDirectory)=VanillaEditHelper/</PathMap>
+        <PathMap>$(MSBuildProjectDirectory)=VanillaEditHelper\</PathMap>
     </PropertyGroup>
 
 </Project>
