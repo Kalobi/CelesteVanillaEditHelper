@@ -227,7 +227,7 @@ namespace Celeste.Mod.VanillaEditHelper {
             On.Celeste.Dialog.Get += DialogOnGet;
             On.Celeste.Dialog.Clean += DialogOnClean;
 
-            On.Celeste.BadelineOldsite.Added += BadelineOldsiteOnAdded;
+            //On.Celeste.BadelineOldsite.Added += BadelineOldsiteOnAdded;
         }
         
         public override void Unload() {
@@ -235,7 +235,7 @@ namespace Celeste.Mod.VanillaEditHelper {
             On.Celeste.Dialog.Get -= DialogOnGet;
             On.Celeste.Dialog.Clean -= DialogOnClean;
 
-            On.Celeste.BadelineOldsite.Added -= BadelineOldsiteOnAdded;
+            //On.Celeste.BadelineOldsite.Added -= BadelineOldsiteOnAdded;
         }
         
         #region Meta

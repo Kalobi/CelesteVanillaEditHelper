@@ -64,4 +64,8 @@
         <PathMap>$(MSBuildProjectDirectory)=VanillaEditHelper\</PathMap>
     </PropertyGroup>
 
+    <PropertyGroup>
+        <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+    </PropertyGroup>
+
 </Project>
