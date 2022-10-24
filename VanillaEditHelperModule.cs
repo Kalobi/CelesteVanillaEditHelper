@@ -266,7 +266,7 @@ namespace Celeste.Mod.VanillaEditHelper {
             return VanillaEditMetadata[area];
         }
         private static VanillaEditMeta CurrentMeta => GetMetaForAreaData(AreaData.Get(
-            ((Engine.Scene as Level ?? (Engine.Scene as LevelLoader)?.Level)?.Session.Area).GetValueOrDefault()));
+            ((Engine.Scene as Level ?? (Engine.Scene as LevelLoader)?.Level)?.Session?.Area).GetValueOrDefault()));
 
         #endregion
 
@@ -296,19 +296,6 @@ namespace Celeste.Mod.VanillaEditHelper {
         private static string DialogOnClean(On.Celeste.Dialog.orig_Clean orig, string name, Language language)
         {
             string prefix = CurrentMeta?.DialogPrefix;
-            if (name == "memorial")
-            {
-                Console.WriteLine("Get:");
-                foreach (var key in Fallback.Dialog.Keys)
-                {
-                    Console.WriteLine(key);
-                }
-                Console.WriteLine("Clean:");
-                foreach (var key in Fallback.Cleaned.Keys)
-                {
-                    Console.WriteLine(key);
-                }
-            }
             if (string.IsNullOrWhiteSpace(prefix) || !VanillaDialogKeys.Contains(name))
             {
                 return orig(name, language);
